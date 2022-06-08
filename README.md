@@ -1,2 +1,2 @@
-<h1>Zyneon FFA</h1>
+<h1>Zyneon BungeeBase</h1>
 <a href="https://www.zyneonstudios.com">Website</a>
