@@ -1,0 +1,31 @@
+name: BungeeBase
+main: live.nerotv.Preloader
+author: nerotvlive
+version: 1.19.0 (E501)
+website: https://nerotv.live/bungeebase
+description: BungeeBase by nerotvlive
+
+commands:
+  Ban:
+  IPBan:
+    aliases: [banip]
+  Unban:
+    aliases: [pardon]
+  Kick:
+  Disconnect:
+    aliases: [disc,dc,quit]
+  Lobby:
+    aliases: [hub,l]
+  Banlist:
+    aliases: [blist]
+  ServerMOTD:
+    aliases: [motd]
+  BungeeBase:
+    aliases: [author,autor,plugin,dev,developer,pl,plugins]
+  Get:
+  Teamchat:
+    aliases: [tc]
+  bungeemaintenance:
+    aliases: [bmain]
+  bsrl:
+    aliases: [bungeestop]
