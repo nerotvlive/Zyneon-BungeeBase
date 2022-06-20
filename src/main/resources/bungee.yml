@@ -1,7 +1,7 @@
 name: BungeeBase
 main: live.nerotv.Preloader
 author: nerotvlive
-version: 1.19.0 (E501)
+version: '${project.version}'
 website: https://nerotv.live/bungeebase
 description: BungeeBase by nerotvlive
 
