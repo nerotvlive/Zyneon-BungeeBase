@@ -1,6 +1,5 @@
 package live.nerotv.bungeebase.listener;
 
-import de.dytanic.cloudnet.ext.bridge.node.CloudNetBridgeModule;
 import live.nerotv.bungeebase.api.API;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.event.PostLoginEvent;
