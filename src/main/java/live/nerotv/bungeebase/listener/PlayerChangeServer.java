@@ -10,6 +10,9 @@ public class PlayerChangeServer implements Listener {
     @EventHandler
     public void onServerChange(ServerSwitchEvent e) {
         ProxiedPlayer p = e.getPlayer();
-        p.sendMessage("§8»§7 Du bist nun auf §e"+e.getPlayer().getServer().getInfo().getName()+"§8!");
+        String serverName = e.getPlayer().getServer().getInfo().getName();
+        if(!serverName.toLowerCase().contains("lobby")) {
+            p.sendMessage("§8»§7 Du bist nun auf §e" + serverName + "§8!");
+        }
     }
 }
