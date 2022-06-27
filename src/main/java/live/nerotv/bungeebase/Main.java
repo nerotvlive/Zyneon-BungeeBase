@@ -4,10 +4,7 @@ import live.nerotv.Preloader;
 import live.nerotv.bungeebase.api.API;
 import live.nerotv.bungeebase.api.ConfigAPI;
 import live.nerotv.bungeebase.commands.*;
-import live.nerotv.bungeebase.listener.PlayerChangeServer;
-import live.nerotv.bungeebase.listener.PlayerJoin;
-import live.nerotv.bungeebase.listener.PlayerLogin;
-import live.nerotv.bungeebase.listener.PlayerPing;
+import live.nerotv.bungeebase.listener.*;
 import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.api.plugin.PluginManager;
 import static live.nerotv.bungeebase.api.API.*;
@@ -79,6 +76,7 @@ public class Main {
     private static void initListener() {
         API.sendMessage("§0  §7Die Listener werden geladen§8...");
         API.registerEvent(instance,new PlayerChangeServer(),"PlayerChangeServerEvent");
+        API.registerEvent(instance,new PlayerDisconnect(),"PlayerDisconnectEvent");
         API.registerEvent(instance,new PlayerJoin(),"PlayerJoinEvent");
         API.registerEvent(instance,new PlayerLogin(),"PlayerLoginEvent");
         API.registerEvent(instance,new PlayerPing(),"PlayerPingEvent");

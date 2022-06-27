@@ -3,6 +3,7 @@ package live.nerotv.bungeebase.api;
 import live.nerotv.bungeebase.Main;
 import live.nerotv.bungeebase.utils.Communicate;
 import live.nerotv.bungeebase.utils.Countdown;
+import live.nerotv.bungeebase.utils.ZyneonPlayer;
 import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.chat.BaseComponent;
@@ -17,10 +18,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 public class API {
+
+    public static HashMap<UUID, ZyneonPlayer> zyneonPlayers = new HashMap<>();
 
     public static String Prefix = "§5Zyneon §8» §7";
     public static String noPerms = "§cDas darfst du nicht!";
