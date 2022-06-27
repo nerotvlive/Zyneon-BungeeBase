@@ -10,7 +10,7 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 import net.md_5.bungee.event.EventPriority;
 
-public class Ping implements Listener {
+public class PlayerPing implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPing(ProxyPingEvent e) {

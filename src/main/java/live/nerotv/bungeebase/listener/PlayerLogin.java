@@ -2,7 +2,6 @@ package live.nerotv.bungeebase.listener;
 
 import live.nerotv.bungeebase.api.API;
 import live.nerotv.bungeebase.api.BanAPI;
-import live.nerotv.bungeebase.api.ConfigAPI;
 import net.md_5.bungee.api.connection.PendingConnection;
 import net.md_5.bungee.api.event.LoginEvent;
 import net.md_5.bungee.api.plugin.Listener;
@@ -10,7 +9,7 @@ import net.md_5.bungee.event.EventHandler;
 import net.md_5.bungee.event.EventPriority;
 import java.util.UUID;
 
-public class Login implements Listener {
+public class PlayerLogin implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onLogin(LoginEvent e) {

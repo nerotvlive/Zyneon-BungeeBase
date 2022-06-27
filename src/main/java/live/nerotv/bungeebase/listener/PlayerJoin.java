@@ -7,7 +7,7 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 import net.md_5.bungee.event.EventPriority;
 
-public class Join implements Listener {
+public class PlayerJoin implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onJoin(PostLoginEvent e) {
